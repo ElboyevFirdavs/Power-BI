@@ -1,0 +1,108 @@
+1. What is Power BI, and what are its three main components?
+   
+    Power BI — bu Microsoft tomonidan ishlab chiqilgan ma’lumotlarni tahlil qilish va vizualizatsiya qilish vositasi.
+    3 asosiy komponent:
+    
+    Power BI Desktop – hisobotlar va vizualizatsiyalar yaratish uchun.
+    
+    Power BI Service (Online) – hisobotlarni bulutga yuklab, boshqalar bilan ulashish.
+    
+    Power BI Mobile – telefon va planshetda hisobotlarni ko‘rish uchun.
+
+2. Name two business use cases for Power BI dashboards.
+    
+    Savdo tahlili – Qaysi mahsulot eng ko‘p sotilganini ko‘rsatish.
+    
+    HR analitikasi – Ishchilar aylanmasi, davomat va samaradorlikni kuzatish.
+
+ 3. How do you download and install Power BI Desktop?
+    Rasmiy saytga kirasiz: https://powerbi.microsoft.com
+    
+    "Download Power BI Desktop" tugmasini bosasiz
+    
+    .exe faylni o‘rnatib ishga tushirasiz
+
+4. Difference: Power BI Desktop vs Power BI Service
+    Xususiyat	Power BI Desktop	Power BI Service
+    Ish joyi	Kompyuterda	Onlayn (bulutda)
+    Ma’lumot yuklash	Foydalanuvchi yuklaydi	Real vaqtli yangilanish bo‘lishi mumkin
+    Ulashish	Yo‘q	Ha
+
+
+5. What file extension does a Power BI project use?
+    .pbix – Power BI Desktop fayl formatidir.
+
+6. Role of Power Query in Power BI
+    Power Query – bu ma’lumotlarni kiritish, tozalash va transformatsiya qilish vositasi. Misol: Na’malum qiymatlarni olib tashlash, ustunlarni birlashtirish, format o‘zgartirish.
+
+7. Why prefer Power BI over Excel?
+      Vizualizatsiyalar kuchliroq
+      
+      Katta ma’lumotlar bilan ishlashda tezroq
+      
+      Real vaqtli ma’lumotlar bilan bog‘lanish
+      
+      Interaktiv hisobotlar
+
+ 8. One limitation of Power BI Free version:
+      Hisobotlarni jamoa bilan bo‘lishib bo‘lmaydi, faqat o‘zingiz ko‘ra olasiz.
+
+9. What is a "published report" in Power BI Service?
+      Power BI Desktopda yaratilgan hisobotni Power BI Service'ga yuklash — bu "publish" deyiladi. Bu orqali u onlayn bo‘lib qoladi va boshqalar bilan bo‘lishish mumkin.
+
+10. How does Power BI Mobile enhance accessibility?
+    Telefon orqali istalgan joydan hisobotlarni ko‘rish
+    
+    Interaktiv elementlar bilan ishlash
+    
+    Real vaqtli bildirishnomalar olish
+
+
+11. Compare Power BI with Tableau — Pros and Cons
+      Asos	Power BI	Tableau
+      Narx	Arzonroq	Qimmatroq
+      Excel bilan integratsiya	Zo‘r	Kamroq
+      O‘rganish osonligi	Osonroq	Murakkabroq
+      Vizual kuchi	Yaxshi	Juda kuchli
+      
+12. Power BI + Azure integratsiyasi
+      Power BI quyidagilar bilan integratsiyalashadi:
+      
+      Azure SQL Database — ma’lumot manbai sifatida
+      
+      Azure Synapse — katta hajmdagi ma’lumotlar uchun
+      
+      Azure Active Directory — xavfsizlik va kirish boshqaruvi
+      
+13. Gateways in Power BI
+    Gateway — bu Power BI xizmatiga sizning kompyuteringizdagi yoki lokal serverdagi ma’lumotlarni real vaqt rejimida uzatish imkonini beradi.
+
+14. How to convince a company to adopt Power BI? (ROI)
+    Tez tahlil va qarorlar qabul qilish
+    
+    Samaradorlikni oshiradi
+    
+    Excelga nisbatan kamroq xatolik
+    
+    Narxi boshqa BI vositalariga qaraganda arzonroq
+    
+15. Power BI Security Features
+
+    Row-Level Security (RLS) – kim nima ko‘rishini nazorat qilish
+    
+    Azure Active Directory – foydalanuvchi kirishini boshqarish
+    
+    Data Encryption – ma’lumotlar shifrlanadi
+    
+    Audit log – kirishlar va o‘zgarishlar tarixini saqlaydi
+
+
+
+
+
+
+
+
+
+
+

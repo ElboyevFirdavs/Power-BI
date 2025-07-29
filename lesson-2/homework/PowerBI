@@ -1,0 +1,118 @@
+1. List three data sources Power BI can connect to.
+Power BI juda ko‘p turdagi manbalarga ulanishi mumkin. Eng keng tarqalgani:
+Excel fayllari (.xlsx)
+ SQL Server ma'lumotlar bazasi
+ CSV fayllar (.csv)
+🟰 Bundan tashqari: Web-sahifalar, SharePoint, Oracle, MySQL, Azure, Google Sheets va boshqalar.
+
+2. What is the first step to import data into Power BI Desktop?
+Power BI Desktop ochiladi
+
+"Home" menyusidan "Get Data" tugmasi bosiladi
+
+Ma’lumot manbasi (masalan, CSV) tanlanadi
+
+3. How do you refresh imported data in Power BI?
+Home > Refresh tugmasini bosish orqali
+Eslatma: Refresh ishlashi uchun asl fayl (CSV, Excel yoki DB) mavjud bo‘lishi kerak.
+
+4. What file formats can Power BI import directly? (Name two.)
+Power BI quyidagi fayllarni to‘g‘ridan-to‘g‘ri o‘qiy oladi:
+
+.csv
+
+.xlsx
+ Bundan tashqari .json, .xml, .txt, .pbix, .pbit fayllar ham mavjud.
+
+5. What does the "Navigator" window show after selecting a data source?
+Navigator oynasi:
+ Fayldagi mavjud jadvallar yoki varaqlarni ko‘rsatadi (masalan, Excelda bir nechta sheet bo‘lsa)
+ Har bir jadvalning kichik preview’sini ham ko‘rsatadi
+
+6. Import Sales_Data.csv and load only the "Product" and "Price" columns.
+Amal:
+
+Get Data > Text/CSV > Sales_Data.csv tanlang
+
+"Transform Data" ni tanlang
+
+OrderID, Quantity, OrderDate ustunlarini Remove Columns bilan olib tashlang
+
+Close & Load tugmasi orqali yuklang
+
+7. How would you change OrderDate to a date format during import?
+Power Query oynasida OrderDate ustunini tanlang
+
+Transform > Data Type > Date tugmasini bosing
+ Bu ustundagi barcha qiymatlar Date formatda bo‘ladi (kun, oy, yil)
+
+8. What is the difference between "Load" and "Transform Data" in the import dialog?
+Load: Faylni to‘g‘ridan-to‘g‘ri modelga yuklaydi, hech qanday o‘zgarish qilinmaydi
+
+Transform Data: Faylni Power Query oynasiga olib kiradi, u yerda ustunlarni tahrirlash, formatlash mumkin
+
+9. Why might you see an error when connecting to a SQL database? (Name one reason.)
+ Sabablardan biri:
+
+Server nomi yoki login parol noto‘g‘ri kiritilgan
+Boshqa sabablar:
+
+Kompyuterda SQL portlari bloklangan
+
+Tarmoqda ruxsat yo‘q
+
+10. How do you replace a data source after importing it?
+Home > Transform Data > Data Source Settings
+
+Manbani tanlang
+
+Pastdagi Change Source... tugmasi orqali manzilni yangilang
+
+11. Write the M-code to import only rows where Quantity > 1.
+m
+Копировать
+Редактировать
+= Table.SelectRows(Source, each [Quantity] > 1)
+ Bu kod Power Query’dagi Advanced Editor ichiga yoziladi
+
+12. How would you change the data source if Sales_Data.csv changed?
+Transform Data ni oching
+
+Data Source Settings > Change Source... ni bosing
+
+Yangi CSV faylni tanlang
+
+13. Troubleshoot: Your CSV import fails due to a "mixed data type" error—how do you fix it?
+ Mixed data type demak: ustunda ba'zilar raqam, ba'zilar matn (text)
+ Fix qilish yo‘li:
+
+Power Query’da ustunni tanlang
+
+Transform > Detect Data Type yoki o‘zingiz "Text" yoki "Decimal Number" qilib belgilang
+
+14. Connect to a live SQL database with parameters (e.g., filter by year).
+Amallar:
+
+Get Data > SQL Server
+
+Parametr yaratish (Manage Parameters): Masalan, yil — 2023
+
+SQL query yozish:
+
+sql
+Копировать
+Редактировать
+SELECT * FROM Sales WHERE YEAR(OrderDate) = @Year
+Power Query’da bu parametrga ulanadi.
+
+15. How would you automate data imports using Power BI and Power Automate?
+Power BI faylni Power BI Service (online) ga publish qil
+
+Power Automate’da yangi flow yarat:
+
+Trigger: Schedule (masalan, har kuni ertalab)
+
+Action: Refresh a dataset
+
+Bu orqali CSV, SQL yoki Excel ma'lumotlar avtomatik yangilanadi
+

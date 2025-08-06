@@ -1,0 +1,10 @@
+1. 
+  Merge vs Append
+Merge: Ikkita jadvalni ustunlar asosida qo‘shadi (JOIN amaliga o‘xshaydi, masalan: LEFT JOIN, INNER JOIN).
+
+Append: Ikkita (yoki ko‘p) jadvalni qatorlar bo‘yicha qo‘shadi. Ustunlar bir xil bo‘lishi kerak.
+
+  2. 
+  Split Full Name into First Name and Last Name
+Home → Split Column → By Delimiter → Tanlang Space
+Bu First Name va Last Name ni ikkita ustunga ajratadi.
